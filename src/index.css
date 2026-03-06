@@ -1,7 +1,7 @@
 html,
 body {
-    background-color: #242424;
-    color: #fff;
+    /* background-color: #242424; */
+    /* color: #fff; */
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -22,3 +22,8 @@ body {
     font-weight: 700;
     font-style: normal;
 }
+
+/* footer {
+    position: relative;
+    bottom: 0;
+} */
