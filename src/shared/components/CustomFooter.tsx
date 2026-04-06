@@ -2,7 +2,7 @@
 
 const CustomFooter = () => {
     return (
-        <footer className="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+        <footer className="row bg-blue-400 p-2 text-center">
             &copy; {new Date().getFullYear()} Pro Appointments Portal. All rights reserved.
         </footer>
     )

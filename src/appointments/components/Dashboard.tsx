@@ -7,25 +7,25 @@ interface Props {
 
 const Dashboard = ({ appointments }: Props) => {
     return (
-        <>
-            <div className="row text-center mt-2 mb-2">
+        <main className="grow p-2">
+            <div className="text-xl">
                 <h1>Dashboard</h1>
             </div>
-            <div className="row mt-2 mb-2">
-                <div className="col-sm-6 mb-3 mb-sm-0">
-                    <div className="card">
-                        <div className="card-body">
-                            <h5 className="card-title">Crear Paciente</h5>
-                            {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+            <div className="">
+                <div className="">
+                    <div className="">
+                        <div className="">
+                            <h5 className="">Crear Paciente</h5>
+                            {/* <p className="">With supporting text below as a natural lead-in to additional content.</p> */}
                             {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-6">
-                    <div className="card">
-                        <div className="card-body">
-                            <h5 className="card-title">Ver Agenda</h5>
-                            {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+                <div className="">
+                    <div className="">
+                        <div className="">
+                            <h5 className="">Ver Agenda</h5>
+                            {/* <p className="">With supporting text below as a natural lead-in to additional content.</p> */}
                             {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
                         </div>
                     </div>
@@ -34,15 +34,15 @@ const Dashboard = ({ appointments }: Props) => {
 
 
             {/* Turnos de hoy */}
-            <div className="card mt-2 mb-2">
-                <div className="card-body">
-                    <h5 className="card-title text-center">Turnos de hoy</h5>
-                    <p className="card-text">No hay turnos para hoy.</p>
-                    <p className="card-text">{appointments.length} (total de turnos de hoy)</p>
-                    <ul className="list-group list-group-flush">
+            <div className="">
+                <div className="">
+                    <h5 className="">Turnos de hoy</h5>
+                    <p className="">No hay turnos para hoy.</p>
+                    <p className="">{appointments.length} (total de turnos de hoy)</p>
+                    <ul className="">
                         {
                             appointments.map((appointment) => (
-                                <li key={appointment.id} className="list-group-item">{appointment.patientId} (id del paciente)</li>
+                                <li key={appointment.id} className="">{appointment.patientId} (id del paciente)</li>
                             ))
                         }
                     </ul>
@@ -51,26 +51,26 @@ const Dashboard = ({ appointments }: Props) => {
 
 
             {/* Esta semana */}
-            <div className="card text-center mt-2 mb-2">
-                <div className="card-header">
+            <div className="">
+                <div className="">
                     Esta semana
                 </div>
             </div>
-            <div className="card-group mt-2 mb-2">
-                <div className="card text-center">
-                    <div className="card-body bg-primary">
-                        <h5 className="card-title">1</h5>
-                        <p className="card-text">Total turnos</p>
+            <div className="">
+                <div className="">
+                    <div className="">
+                        <h5 className="">1</h5>
+                        <p className="">Total turnos</p>
                     </div>
                 </div>
-                <div className="card text-center">
-                    <div className="card-body bg-success">
-                        <h5 className="card-title">1</h5>
-                        <p className="card-text">Sesiones realizadas</p>
+                <div className="">
+                    <div className="">
+                        <h5 className="">1</h5>
+                        <p className="">Sesiones realizadas</p>
                     </div>
                 </div>
             </div>
-        </>
+        </main>
     )
 }
 
