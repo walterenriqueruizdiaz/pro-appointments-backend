@@ -1,14 +1,14 @@
-// import React from 'react'
+
 import { useState } from "react";
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router"
 import { Laptop, Users, ClipboardClock, NotebookPen, UserCog, LogOut } from "lucide-react";
 
 const menuItems = [
-    { 'label': 'Dashboard', 'href': '/dashboard', 'icon': Laptop, 'key': 'dashboard', roles: ['admin', 'user'] },
-    { 'label': 'Pacientes', 'href': '/patients', 'icon': Users, 'key': 'patients', roles: ['admin', 'user'] },
+    { 'label': 'Home', 'href': '/', 'icon': Laptop, 'key': 'dashboard', roles: ['admin', 'user'] },
     { 'label': 'Agenda', 'href': '/appointments', 'icon': ClipboardClock, 'key': 'appointments', roles: ['admin', 'user'] },
     { 'label': 'Sesiones', 'href': '/sessions', 'icon': NotebookPen, 'key': 'sessions', roles: ['admin', 'user'] },
-    { 'label': 'Administración', 'href': '/admin', 'icon': UserCog, 'key': 'admin', roles: ['admin'] },
+    { 'label': 'Pacientes', 'href': '/patients', 'icon': Users, 'key': 'patients', roles: ['admin', 'user'] },
+    { 'label': 'Administración', 'href': '/administration', 'icon': UserCog, 'key': 'admin', roles: ['admin'] },
 ];
 
 const CustomMenu = () => {
