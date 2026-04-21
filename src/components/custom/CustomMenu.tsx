@@ -35,8 +35,8 @@ const CustomMenu = () => {
             </button>
 
             <div
-                className={`${isOpen ? 'flex' : 'hidden'}  md:flex flex-col md:flex-row md:space-x-4 absolute md:relative top-16 
-                md:top-0 left-0 w-full md:w-auto bg-gray-800 md:bg-transparent p-4 md:p-0 text-sm items-center space-y-4 md:space-y-0`}
+                className={`${isOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row md:space-x-4 absolute md:relative top-16
+                    md:top-0 left-0 w-full md:w-auto bg-gray-800 md:bg-transparent p-4 md:p-0 text-sm items-center space-y-4 md:space-y-0`}
                 id="navbarNavAltMarkup">
 
                 {menuItems.map((item) => (

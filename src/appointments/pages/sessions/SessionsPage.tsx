@@ -2,7 +2,9 @@
 
 export const SessionsPage = () => {
     return (
-        <div>SessionsPage</div>
+        <main className="p-4 lg:p-8">
+            <div className="space-y-8">SessionsPage</div>
+        </main>
     )
 }
 

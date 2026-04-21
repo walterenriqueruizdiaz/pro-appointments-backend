@@ -22,7 +22,19 @@ export const mockPatients: Patient[] = [
         createdAt: '28-02-2026',
         updatedAt: '28-02-2026',
         profesionalId: '1'
+    },
+    {
+        id: '2',
+        dni: '21723333',
+        firstName: 'Walter',
+        lastName: 'Ruiz Diaz',
+        birtdDate: '16-06-1970',
+        mobilePhone: '9917',
+        createdAt: '28-02-2026',
+        updatedAt: '28-02-2026',
+        profesionalId: '1'
     }
+
 ]
 // Patient
 // id          String   @id @default(uuid())

@@ -1,25 +1,24 @@
 import StatCard from "@/appointments/components/StatCard";
 import type { Appointment } from "../../../mock-data/appointments.mock";
-import NoticeFreeTrial from "../../../components/custom/NoticeFreeTrial";
 import { CalendarCheck, ClipboardClock, Clock, NotebookIcon, NotebookPen, Plus, UserPlus, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import QuickAction from "@/appointments/components/QuickAction";
+import GreetingUser from "@/appointments/components/GreetingUser";
+import type { User } from "@/interfaces/user.interface";
 
-// import React from 'react'
+
 interface Props {
     appointments: Appointment[];
+    user: User,
 }
 
-const HomePage = ({ appointments }: Props) => {
+const HomePage = ({ appointments, user }: Props) => {
     return (
         <main className="p-4 lg:p-8">
-            <NoticeFreeTrial />
             <div className="space-y-8">
                 {/* Encabezado */}
                 <div>
-                    <h1 className="text-xl font-bold text-gray-900">
-                        ¡Buenos días, Herramientas! ☀️
-                    </h1>
+                    <GreetingUser user={user} />
                     <p className="text-gray-500 mt-1">
                         Aquí tienes un resumen de tu agenda
                     </p>
@@ -57,10 +56,10 @@ const HomePage = ({ appointments }: Props) => {
                                 <CardTitle className="text-lg">Acciones Rápidas</CardTitle>
                             </CardHeader>
                             <CardContent className="p-6 pt-0 grid grid-cols-2 gap-3">
-                                <QuickAction color="bg-green-500" href="/appointments" label="Ver Agenda" icon={CalendarCheck} subtext="Turnos" />
-                                <QuickAction color="bg-blue-500" href="/newappointment" label="Agendar Turno" icon={Plus} subtext="Nuevo Turno" />
-                                <QuickAction color="bg-purple-500" href="/newPatient" label="Agregar Paciente" icon={UserPlus} subtext="Nuevo Paciente" />
-                                <QuickAction color="bg-gray-500" href="/sessions" label="Nueva Sesión" icon={NotebookPen} subtext="Agregar Sesión" />
+                                <QuickAction color="green" href="/appointments" label="Ver Agenda" icon={CalendarCheck} subtext="Turnos" />
+                                <QuickAction color="blue" href="/newappointment" label="Agendar Turno" icon={Plus} subtext="Nuevo Turno" />
+                                <QuickAction color="purple" href="/newPatient" label="Agregar Paciente" icon={UserPlus} subtext="Nuevo Paciente" />
+                                <QuickAction color="gray" href="/sessions" label="Nueva Sesión" icon={NotebookPen} subtext="Agregar Sesión" />
                                 {/* <QuickAction color="bg-gray-500" href="/configuration" label="Configuración" icon={Settings} subtext="Ajustes" /> */}
                             </CardContent>
                         </Card>

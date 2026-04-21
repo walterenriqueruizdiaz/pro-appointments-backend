@@ -2,7 +2,9 @@
 
 export const AppointmentsPage = () => {
     return (
-        <div>AppointmentsPage</div>
+        <main className="p-4 lg:p-8">
+            <div className="space-y-8">AppointmentsPage</div>
+        </main>
     )
 }
 
