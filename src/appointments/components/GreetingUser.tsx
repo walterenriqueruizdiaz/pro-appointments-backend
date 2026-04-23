@@ -1,7 +1,7 @@
-import type { User } from "@/interfaces/user.interface"
+import type { UserInterface } from "@/interfaces/user.interface"
 
 interface Props {
-    user: User
+    user: UserInterface
 }
 
 export const GreetingUser = ({ user }: Props) => {

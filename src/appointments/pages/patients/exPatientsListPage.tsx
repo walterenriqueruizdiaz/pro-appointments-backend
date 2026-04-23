@@ -2,14 +2,14 @@ import GreetingUser from "@/appointments/components/GreetingUser";
 import QuickAction from "@/appointments/components/QuickAction";
 import TableAction from "@/appointments/components/TableAction";
 import { Button } from "@/components/ui/button";
-import type { User } from "@/interfaces/user.interface";
+import type { UserInterface } from "@/interfaces/user.interface";
 import type { Patient } from "@/mock-data/patients.mock";
 import { Plus, Trash, UserPlus, UserRoundPen, View } from "lucide-react";
 
 // import React from 'react'
 interface Props {
     patients: Patient[],
-    user: User
+    user: UserInterface
 }
 
 export const PatientsPage = ({ patients, user }: Props) => {

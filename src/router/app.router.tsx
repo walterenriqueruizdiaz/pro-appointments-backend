@@ -10,9 +10,11 @@ import AppointmentsPage from "@/appointments/pages/apppointments/AppointmentsPag
 import SessionsPage from "@/appointments/pages/sessions/SessionsPage";
 import AdministrationPage from "@/appointments/pages/administration/AdministrationPage";
 import { userMock } from "@/mock-data/user.mock";
+import LoginPage from "@/appointments/pages/login/LoginPage";
+import PatientPage from "@/appointments/pages/patients/PatientPage";
 
 
-const PatientsPage = lazy(() => import('@/appointments/pages/patients/PatientsPage'))
+const PatientsListPage = lazy(() => import('@/appointments/pages/patients/PatientsListPage'))
 
 export const appRouter = createBrowserRouter([
     {
@@ -23,13 +25,17 @@ export const appRouter = createBrowserRouter([
                 index: true,
                 element: <HomePage appointments={mockAppointments} user={userMock} />
             },
-            // {
-            //     path: 'heroes/1',
-            //     element: <HeroPage />
-            // },
+            {
+                path: 'login',
+                element: <LoginPage />
+            },
             {
                 path: 'patients',
-                element: <PatientsPage patients={mockPatients} user={userMock} />
+                element: <PatientsListPage patients={mockPatients} user={userMock} />
+            },
+            {
+                path: 'patient/:idPatient',
+                element: <PatientPage />
             },
             {
                 path: 'appointments',

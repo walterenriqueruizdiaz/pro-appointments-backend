@@ -4,12 +4,12 @@ import { CalendarCheck, ClipboardClock, Clock, NotebookIcon, NotebookPen, Plus, 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import QuickAction from "@/appointments/components/QuickAction";
 import GreetingUser from "@/appointments/components/GreetingUser";
-import type { User } from "@/interfaces/user.interface";
+import type { UserInterface } from "@/interfaces/user.interface";
 
 
 interface Props {
     appointments: Appointment[];
-    user: User,
+    user: UserInterface,
 }
 
 const HomePage = ({ appointments, user }: Props) => {
